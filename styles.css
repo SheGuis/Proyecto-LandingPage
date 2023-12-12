@@ -142,10 +142,17 @@ h2 {
 .boton_detallado {
        font-weight: 600;
        border: solid 1px black;
-       background-color: transparent;
+       background-color: white;
+       color: black;
        padding: 13px 50px ;
        border-radius: 20px;
+       cursor: pointer;
+       
     }
+.boton_detallado:hover{
+    background-color: black;
+    color: white;
+}
 
 .botones_simples {
        background-color: transparent;
@@ -297,6 +304,10 @@ h2 {
    }
    
    .imagenes3:hover {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+    border: 1px solid black;
     cursor: pointer;
    }
    
@@ -530,7 +541,7 @@ footer{
     padding-top: 1%;
     background: #000000;
 }
-@media screen  and (max-witdh:600px) {
+@media screen  and (min-witdh:1100px) {
     .navbar_logo {
         display: none;
     }
@@ -542,9 +553,14 @@ footer{
 
     }
     .section_principal img {
-        object-position: center;
+        background-position: center;
     }
 }
-
+@media (max-width:600px) {
+.section_principal {
+    margin: 5% 0 0 5%;
+    grid-column: 1/3;
+}
+}
 
    
