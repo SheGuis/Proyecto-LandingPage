@@ -541,26 +541,24 @@ footer{
     padding-top: 1%;
     background: #000000;
 }
-@media screen  and (min-witdh:1100px) {
+@media screen  and (max-width:900px) {
     .navbar_logo {
         display: none;
     }
-    .menu {
+    .menu, .idioma {
         display: none;
     }
     .texto_section_principal{
         display: none;
-
     }
     .section_principal img {
-        background-position: center;
+        background-position-x: center;
     }
-}
-@media (max-width:600px) {
-.section_principal {
-    margin: 5% 0 0 5%;
-    grid-column: 1/3;
-}
-}
+
+    }
+
+    
+
+
 
    
